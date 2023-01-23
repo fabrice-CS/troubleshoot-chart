@@ -4,6 +4,14 @@
 
 https://user-images.githubusercontent.com/112407736/214024115-d5d36700-8d6d-42cd-ad5f-5519e9135c86.mov
 
+2 charts - one does not update
+
+
+
+https://user-images.githubusercontent.com/112407736/214024412-5e476ee4-e95e-4300-81a7-8c1231424e44.mov
+
+
+
 
 
 # TroubleshootChart
