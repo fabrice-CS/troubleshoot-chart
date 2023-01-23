@@ -1,3 +1,11 @@
+1 chart ok
+
+
+
+https://user-images.githubusercontent.com/112407736/214024115-d5d36700-8d6d-42cd-ad5f-5519e9135c86.mov
+
+
+
 # TroubleshootChart
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
