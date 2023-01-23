@@ -11,6 +11,12 @@ https://user-images.githubusercontent.com/112407736/214024115-d5d36700-8d6d-42cd
 https://user-images.githubusercontent.com/112407736/214024412-5e476ee4-e95e-4300-81a7-8c1231424e44.mov
 
 
+1 chart - rerender causes error
+
+
+
+https://user-images.githubusercontent.com/112407736/214024976-2d3daa74-90f3-47ec-bffb-56de0d4ca259.mov
+
 
 
 
