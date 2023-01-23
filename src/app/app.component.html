@@ -9,15 +9,14 @@
       [data]="line.data"
       [format]="line.format"
       [label]="line.labelTranslationKey"
-      [dataSetKey]="line.dataSetKey"
     >
     </csm-graph-line>
+    <div>{{ line.data | json  }}</div>
   </ng-container>
 
   <ng-container *ngFor="let xAxis of xAxes">
     <csm-axis-x
       [format]="xAxis.format"
-      [dataSetKey]="xAxis.dataSetKey"
     ></csm-axis-x>
   </ng-container>
 
@@ -32,28 +31,28 @@
   [overrideTooltip]="true"
   [margin]="{ top: 10, right: 44, bottom: 44, left: 84 }"
 >
-  <ng-container *ngFor="let line of selectedChart2">
+  <!-- <ng-container *ngFor="let line of selectedChart2"> -->
     <csm-graph-line
       [color]="line.color"
       [data]="line.data"
       [format]="line.format"
       [label]="line.labelTranslationKey"
-      [dataSetKey]="line.dataSetKey"
+      *ngFor="let line of selectedChart2"
     >
     </csm-graph-line>
-  </ng-container>
+  <!-- </ng-container> -->
 
-  <ng-container *ngFor="let xAxis of xAxes">
+  <!-- <ng-container *ngFor="let xAxis of xAxes"> -->
     <csm-axis-x
       [format]="xAxis.format"
-      [dataSetKey]="xAxis.dataSetKey"
+      *ngFor="let xAxis of xAxes"
     ></csm-axis-x>
-  </ng-container>
+  <!-- </ng-container> -->
 
-  <ng-container *ngFor="let yAxis of yAxes">
-    <csm-axis-y [format]="yAxis.format" [orientation]="yAxis.orientation">
+  <!-- <ng-container *ngFor="let yAxis of yAxes"> -->
+    <csm-axis-y [format]="yAxis.format" [orientation]="yAxis.orientation" *ngFor="let yAxis of yAxes">
     </csm-axis-y>
-  </ng-container>
+  <!-- </ng-container> -->
 </csm-chart-lines>
 
 <button (click)="toggleChart()">change chart 1 - {{ chartId }}</button>
