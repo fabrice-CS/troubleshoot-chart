@@ -1,0 +1,65 @@
+<csm-chart-lines
+  *ngIf="showChart1"
+  [overrideTooltip]="true"
+  [margin]="{ top: 10, right: 44, bottom: 44, left: 84 }"
+>
+  <ng-container *ngFor="let line of selectedChart">
+    <csm-graph-line
+      [color]="line.color"
+      [data]="line.data"
+      [format]="line.format"
+      [label]="line.labelTranslationKey"
+      [dataSetKey]="line.dataSetKey"
+    >
+    </csm-graph-line>
+  </ng-container>
+
+  <ng-container *ngFor="let xAxis of xAxes">
+    <csm-axis-x
+      [format]="xAxis.format"
+      [dataSetKey]="xAxis.dataSetKey"
+    ></csm-axis-x>
+  </ng-container>
+
+  <ng-container *ngFor="let yAxis of yAxes">
+    <csm-axis-y [format]="yAxis.format" [orientation]="yAxis.orientation">
+    </csm-axis-y>
+  </ng-container>
+</csm-chart-lines>
+
+<csm-chart-lines
+  *ngIf="showChart2"
+  [overrideTooltip]="true"
+  [margin]="{ top: 10, right: 44, bottom: 44, left: 84 }"
+>
+  <ng-container *ngFor="let line of selectedChart2">
+    <csm-graph-line
+      [color]="line.color"
+      [data]="line.data"
+      [format]="line.format"
+      [label]="line.labelTranslationKey"
+      [dataSetKey]="line.dataSetKey"
+    >
+    </csm-graph-line>
+  </ng-container>
+
+  <ng-container *ngFor="let xAxis of xAxes">
+    <csm-axis-x
+      [format]="xAxis.format"
+      [dataSetKey]="xAxis.dataSetKey"
+    ></csm-axis-x>
+  </ng-container>
+
+  <ng-container *ngFor="let yAxis of yAxes">
+    <csm-axis-y [format]="yAxis.format" [orientation]="yAxis.orientation">
+    </csm-axis-y>
+  </ng-container>
+</csm-chart-lines>
+
+<button (click)="toggleChart()">change chart 1 - {{ chartId }}</button>
+<button (click)="toggleChart2()">change chart 2 - {{ chartId2 }}</button>
+
+<button (click)="toggleShowChart2()">show chart 2 - {{ showChart2 }}</button>
+
+<br />
+<span>use rerender {{ useReRender }}</span>
